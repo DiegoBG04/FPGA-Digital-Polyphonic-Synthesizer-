@@ -27,18 +27,55 @@ Supports **multiple waveforms**, **octave shifting**, **envelope control (attack
 
 ---
 
-## Repository Structure
+ ## Instructions Manual
+Follow the following steps to implement, test and run this program on your FPGA board.
+1. Download code.zip files in repository
+2. Create a Quartus Prime project and select your FPGA board
+3. Import the v files for the project
+4. Import the correct pin assignments for your specific FPGA board
+5. Compile the program
+6. Run through the Quartus Programmer
+7. Connect a PS/2 keyboard to the PS/2 input
+8. Connect a speaker to the audio-out pin on the board
 
-```text
-.
-├── src/                 # Verilog source code
-│   ├── synth_top.v      # Top-level module
-│   ├── waveform_generator.v
-│   ├── synth_controller.v
-│   ├── key_to_tick_converter.v
-│   └── sound_modules/   # Mixers, envelope, etc.
-├── report/
-│   └── FPGA_Synth_Report.pdf
-├── midi-parser/         # (or ps2-controller/) support code if applicable
-├── LICENSE
-└── README.md
+After completing these steps, you should have a working digital synthesizer
+
+## Controls
+
+**Musical Keyboard:**
+'A' to ';' keys represent the white keys on the piano, 'W','E','T','Y','U','O','P' represent the black keys on the piano
+
+**Octave shift:**
+Press 'Z' to lower the piano by one octave.
+Press 'X' to raise the piano by one octave.
+
+**Waveform Selection and Mixer**
+Press KEY1 to view selected waveforms and mix on the hex displays.    
+HEX5 & HEX4 represent waveform 1.    
+HEX1 & HEX0 represent waveform 2.  
+HEX3 & HEX2 represent mix percentage.  
+Available waveforms are:  
+ - Saw Wave (00)  
+ - Pulse Wave (01)  
+ - Triangle Wave (10)  
+ - Square Wave (11)  
+
+Press 'left' and 'right' arrows to cycle through selected waveform 1  
+Press 'up' and 'down' arrows to cycle through selected waveform 2  
+
+Control mix with '-' & '+' keys. (100 will only play waveform 2, 0 will only play waveform 1. Mix between)  
+
+**ASR Modulation**  
+Press KEY2 to view ASR values on the hex displays.  
+HEX5 & HEX4 represent attack time (hex number is a tenth of the attack time. 10 will be 100ms, 20 will be 200ms etc)  
+HEX3 & HEX2 represent sustain level (volume percentage)  
+HEX1 & HEX0 represent release time(hex number is a tenth of the release time. 10 will be 100ms, 20 will be 200ms etc)  
+
+Press 'Insert' & 'Delete' keys to adjust attack time.  
+Press 'Home' & 'End' keys to adjust sustain level.  
+Press 'Pg Up' & 'Pg Down' keys to adjust release time.  
+
+**Reset**  
+Press KEY0 to reset all values to their default state  
+
+
