@@ -1,7 +1,7 @@
 # FPGA Digital Synthesizer
 
 A polyphonic digital sound synthesizer implemented on the Terasic DE1-SoC board using Verilog HDL.  
-Supports multiple waveforms, octave shifting, envelope control (attack/release), and PS/2 keyboard input used as a MIDI-style controller.
+Supports **multiple waveforms**, **octave shifting**, **envelope control (attack/release)**, and **PS/2 keyboard input** used as a MIDI-style controller.
 
 ---
 
