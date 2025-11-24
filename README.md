@@ -32,7 +32,7 @@ Video Demostration available on YouTube. Link available in 'About' section of th
 
  ## Instructions Manual
 Follow the following steps to implement, test and run this program on your FPGA board.
-1. Download code.zip files in repository
+1. Download vfiles in src folder repository
 2. Create a Quartus Prime project and select your FPGA board
 3. Import the v files for the project
 4. Import the correct pin assignments for your specific FPGA board
