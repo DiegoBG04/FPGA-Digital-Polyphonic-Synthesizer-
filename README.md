@@ -3,6 +3,9 @@
 A polyphonic digital sound synthesizer implemented on the Terasic DE1-SoC board using Verilog HDL.  
 Supports **multiple waveforms**, **octave shifting**, **envelope control (attack/release)**, and **PS/2 keyboard input** used as a MIDI-style controller.
 
+**Note**  
+Video Demostration available on YouTube. Link available in 'About' section of this page.
+
 ---
 
 ## Features
