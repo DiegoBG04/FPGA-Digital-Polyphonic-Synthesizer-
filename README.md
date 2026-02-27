@@ -6,6 +6,9 @@ Supports **multiple waveforms**, **octave shifting**, **envelope control (attack
 **Note**  
 Video Demostration available on YouTube. Link available in 'About' section of this page.
 
+**Update**
+Code files made unavailable due to project policies at the University of Toronto
+
 ---
 
 ## Features
